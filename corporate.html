@@ -29,6 +29,31 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Aureon Corporate</title>
+  <style>
+    .unit-4 {
+        transition: color 0.5s;
+    }
+
+    .unit-4:hover { /* Slightly red background */
+        color: red;
+    }
+    .styled-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        .styled-list li {
+            background-color: rgba(240, 225, 233, 0.12); /* Pale white background */
+            height: 60px; /* Fixed height for all items */
+            display: flex; /* Enable flexbox */
+            align-items: center; /* Vertically center text */
+            padding: 0 10px; /* Add some padding for better appearance */
+            margin-bottom: 10px; /* Add some space between list items */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box shadow for 3D effect */
+        }
+</style>
 </head>
 <body>
 
@@ -46,7 +71,7 @@
 
 
       <nav class="site-nav">
-        <div class="logo">
+       <div class="logo" style="margin-left: -20px;">
           <a href="index.html">
             <img src="AureonLogo.png" alt="Aureon Logo" style="width: 130px;">
           </a>
@@ -279,7 +304,7 @@
             
             <h2 class="font-weight-bold mb-4 heading">Why Choose Aureon Solutions for Corporate Services?</h2>
             <p class="mb-4">Choosing Aureon Solutions for your corporate services ensures you benefit from our extensive experience and commitment to delivering personalized solutions.
-                <ul>
+              <ul class="styled-list">
               <li>Experienced Corporate Advisors: Our team of experts brings years of experience in corporate services, ensuring you receive the best advice and support.</li>
               <li>Tailored Corporate Solutions: We customize our services to meet your specific business needs and goals, ensuring optimal outcomes.</li>
               <li>Comprehensive Corporate Support: From company registration to trust setup, we provide end-to-end support for all your corporate needs.</li>
